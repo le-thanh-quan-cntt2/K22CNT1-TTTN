@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* width: 80%; */
+    /* width: 1600px; */
+    max-width: 1320px;
+    margin: 0 auto;
+
+}
+
+html,
+body {
+    font-family: "SVN-GothamBook";
+}
+
+nav {
+    background-color: #05a742;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    font-family: "SVN-GothamBook";
+    color: #fff;
+    text-decoration: none;
+    /* background-color: blue; */
+    display: block;
+    /* margin:1rem ; */
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+a:hover {
+    color: #fff600;
+}
+
+a.active {
+    color: #fff600;
+}

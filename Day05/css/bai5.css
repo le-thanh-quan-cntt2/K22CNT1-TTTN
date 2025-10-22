@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+.row{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.col{
+    width: calc(33.333333% - 20px);
+    display: flex;
+    align-items: stretch;
+}
+.box-item{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    height: calc(100vw / 4);
+}
+.img{
+    position: relative;
+    transition: all 3s ease;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 75%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    transition: all 3s ease;
+}
+.img .title{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    padding: 1rem 0;
+    transition: all 3s ease;
+}
+.img h3 a{
+    display: block;
+    color: #fff600;
+    text-decoration: none;
+    padding: 0 1rem;
+    transition: all 3s ease;
+}
+.img:hover .title {
+    background-color: rgb(10, 186, 80, .75);
+}
+.img:hover a{
+    color: #fff;
+}
+.img:hover img{
+    transform: scale(1.5);
+    cursor: pointer;
+  
+}
+.box-content{
+    transition: all 3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 25%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+}
+.box-content p{
+    font-size: .9rem;
+    padding: 1rem;
+    line-height: 1.25;
+    
+}
+.box-content .box-footer{
+    padding: 0 1rem 1rem ;
+    display: flex;
+    justify-content: flex-end;
+}
+.box-footer span {
+    margin-right:.5rem;
+    color: #636161;
+    font-size: .8rem;
+}
+.box-footer span i {
+    color: #636161;
+}
+.box-footer a{
+    color: red;
+    font-size: .8rem;
+}
+.box-content:hover {
+    background-color: rgba(24, 240, 110, 0.5);
+    cursor: pointer;
+}
+.box-content:hover p{
+    color: #121862;
+}
+
+@media (max-width:580px){
+    .container{
+        width: calc(100vw - 2rem);
+        margin: 10px 1rem;
+    }
+    .col{
+        width: 100%;
+    }
+    .box-item{
+        border: 1px solid #eee;
+        border-radius: 10px;
+        height: calc(100vw);
+    }
+}
