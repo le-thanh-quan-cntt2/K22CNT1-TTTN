@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "SVN-Gotham-Bold";
+    src: url('../fonts/SVN-Gotham-Bold.ttf');
+}
+@font-face {
+    font-family: "SVN-Gotham-Book";
+    src: url('../fonts/SVN-Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: "SVN-Gotham-Regular";
+    src: url('../fonts/SVN-Gotham-Regular.otf');
+}
