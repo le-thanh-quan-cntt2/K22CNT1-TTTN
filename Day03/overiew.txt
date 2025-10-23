@@ -1,0 +1,23 @@
+# Review - Các thẻ html cơ bản (Tham khảo thêm với từ khóa trên chatGPT)
+* Html 5:
+    - Tiêu đề: h1, h2, .... h6: 
+    - Nội dung: p, br
+    - Các thể inline định dạng nội dung: b, i, u, span, a, img, ....
+    - Danh sách: 
+        + ul, li 
+        + ol, li 
+    - Table
+    - Form: 
+    - Khối: (Bỗ cục nội dung )
+
+        header
+        nav
+        section
+            aside
+            article
+        footer
+
+        div 
+
+    ====>
+    
