@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác với DOM</title>
+</head>
+
+<body>
+    <div id="zone1">
+        <h1>Cú pháp tương tác với DOM</h1>
+        <hr />
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla minima excepturi nemo dicta ipsum nesciunt
+            dolores ad, distinctio quos reiciendis quam atque alias magni corrupti illo accusamus quod inventore vitae.
+        </p>
+        <div>
+            <h2 class="title">Tương tác thông qua thuộc tính class</h2>
+        </div>
+        <div>
+            <h2 class="title">Forms</h2>
+            UserName:
+            <input type="text" name="username" id="u_name" value="Thanh Quan">
+            <span id="u_value"></span>
+            <p>Nội dung 1</p>
+        </div>
+        <div>
+            <h2 class="title">Là lá la là <span>Thanh Quan</span> </h2>
+        </div>
+    </div>
+    <h2 class="title ">H2 ngoài Zone1</h2>
+
+    <script>
+        // tương tác thông qua thuộc tính id của phần tử
+        var element = document.getElementById('zone1');
+        console.log(element);
+
+        var val = document.getElementById('u_name').value;
+        console.log("u:", val);
+
+        // Tương tác với tên thẻ
+
+        var element_h1 = document.getElementsByTagName('h1');
+        console.log("H1", element_h1);
+        console.log("Nội dung:", element_h1.innerText);
+        console.log("Nội dung:", element_h1[0].innerText);
+
+        var element_p = document.getElementsByTagName('p');
+        console.log(element_p);
+
+        for (let i = 0; i < element_p.length; i++) {
+            console.log(element_p[i].innerText);
+        }
+
+        // Tương tác thông qua thuộc tính class
+        var element_titles = document.getElementsByClassName('title'); // => mảng
+        // $('.title')
+        console.log(element_titles);
+        // lấy nội dung
+        Array.from(element_titles).forEach(element => {
+            console.log(element.textContent); // lấy nội dung trong thẻ
+            console.log(element.innerText);
+            console.log(element.innerHTML);
+        });
+
+        // tương tác thông qua css selecter
+
+        element_h2s = document.querySelectorAll('#zone1 h2');
+        console.log("H2 trong zone1");
+        Array.from(element_h2s).forEach(e => {
+            console.log(e.textContent);
+        })
+
+        element_inputTexts = document.querySelectorAll('input[type="text"]');
+        console.log(element_inputTexts[0].value);
+
+    </script>
+</body>
+
+</html>
