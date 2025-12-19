@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MEN FASHION</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="sticky-top bg-white border-bottom shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand fw-bold fs-3 text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                    MEN<span class="text-danger">.STORE</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-uppercase fw-bold fs-6">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark active" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" href="#">Bộ sưu tập</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" href="#">Giảm giá</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-dark" href="#">Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 icon-menu">
+                    <a href="#" class="text-dark fs-5"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div class="dropdown d-inline-block">
+                        <a href="#" class="text-dark fs-5" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><span class="dropdown-item-text fw-bold text-success">Chào, @User.FindFirst("FullName")?.Value</span></li>
+                                <li><hr class="dropdown-divider"></li>
+
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li><a class="dropdown-item" href="/Admin/Home"><i class="fa-solid fa-gauge me-2"></i>Quản trị (Admin)</a></li>
+                                }
+
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-clock-rotate-left me-2"></i>Lịch sử đơn hàng</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" href="/Account/Logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Đăng xuất</a></li>
+                            }
+                            else
+                            {
+                                <li><a class="dropdown-item" href="/Account/Login">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="/Account/Register">Đăng ký</a></li>
+                            }
+                        </ul>
+                    </div>
+                    <a href="#" class="text-dark fs-5 position-relative">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Về Chúng Tôi</h5>
+                    <p class="small text-secondary">
+                        Thương hiệu thời trang nam hàng đầu, mang đến phong cách lịch lãm, hiện đại và nam tính.
+                    </p>
+                    <p class="small"><i class="fa-solid fa-location-dot me-2"></i> Hà Nội, Việt Nam</p>
+                    <p class="small"><i class="fa-solid fa-phone me-2"></i> 0357695529</p>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Chính Sách</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Chính sách đổi trả</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Chính sách bảo mật</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Hướng dẫn mua hàng</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Kiểm tra đơn hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Hỗ Trợ Khách Hàng</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Câu hỏi thường gặp</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Phí vận chuyển</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Thành viên VIP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Đăng Ký Nhận Tin</h5>
+                    <p class="small text-secondary">Nhận thông tin sản phẩm mới nhất.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email của bạn...">
+                        <button class="btn btn-outline-light" type="button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small text-secondary">
+                &copy; 2025 - Men Fashion - Designed by Le Thanh Quan
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

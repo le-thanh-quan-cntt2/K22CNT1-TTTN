@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MenFashionProject
+build_property.RootNamespace = MenFashionProject
+build_property.ProjectDir = D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Order/ViewOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcVmlld09yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Product/Attributes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBdHRyaWJ1dGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Product/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/checkout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2hlY2tvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/checkout/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2hlY2tvdXRcU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K22CNT-TTTN-LT.Quan/K22CNT1-TTTN/MenFashionProject/MenFashionProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uhy95bzmmh

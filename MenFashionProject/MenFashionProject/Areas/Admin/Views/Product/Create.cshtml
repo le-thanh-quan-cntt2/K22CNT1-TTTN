@@ -1,0 +1,83 @@
+﻿@model MenFashionProject.Models.Product
+
+@{
+    ViewData["Title"] = "Thêm sản phẩm mới";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="card shadow-sm border-0" style="max-width: 800px; margin: auto;">
+    <div class="card-header bg-white py-3">
+        <h5 class="fw-bold mb-0">Thêm Sản Phẩm Mới</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="mb-3">
+                        <label class="form-label">Tên sản phẩm</label>
+                        <input asp-for="ProductName" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mô tả ngắn</label>
+                        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Giá bán (VNĐ)</label>
+                            <input asp-for="Price" type="number" class="form-control" required />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Giá khuyến mãi (nếu có)</label>
+                            <input asp-for="PriceSale" type="number" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label class="form-label">Danh mục</label>
+                        <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId"></select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Ảnh đại diện</label>
+                        <input type="file" name="imageFile" class="form-control" accept="image/*" required onchange="previewImage(event)" />
+                        <div class="mt-2 text-center">
+                            <img id="imgPreview" src="#" style="max-width: 100%; display: none; border-radius: 5px; border: 1px solid #ddd;" />
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" asp-for="IsActive">
+                        <label class="form-check-label" asp-for="IsActive">Hiển thị ngay</label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" asp-for="IsHome">
+                        <label class="form-check-label" asp-for="IsHome">Hiện ở trang chủ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-end mt-3">
+                <a asp-action="Index" class="btn btn-secondary me-2">Hủy bỏ</a>
+                <button type="submit" class="btn btn-primary px-4">Lưu Sản Phẩm</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Script xem trước ảnh khi chọn file
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function(){
+            var output = document.getElementById('imgPreview');
+            output.src = reader.result;
+            output.style.display = 'block';
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>

@@ -1,0 +1,76 @@
+﻿@model List<MenFashionProject.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Giỏ Hàng";
+}
+
+<div class="container py-5">
+    <h2 class="text-uppercase fw-bold mb-4">Giỏ Hàng Của Bạn</h2>
+
+    @if (Model.Count > 0)
+    {
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="~/images/@item.Image" style="width: 50px; height: 50px; object-fit: cover;" class="rounded me-3">
+                                        <span class="fw-bold">@item.ProductName</span>
+                                    </div>
+                                </td>
+                                <td>@item.Price.ToString("#,##0") đ</td>
+                                <td>
+                                    <input type="number" value="@item.Quantity" class="form-control text-center" style="width: 60px;" readonly>
+                                </td>
+                                <td class="fw-bold text-danger">@item.Total.ToString("#,##0") đ</td>
+                                <a href="/Cart/Remove?id=@item.ProductId&size=@item.Size&color=@item.Color"
+                                   class="text-danger"
+                                   onclick="return confirm('Xóa sản phẩm này?')">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-light border-0 p-3">
+                    <h5 class="fw-bold text-uppercase">Cộng Giỏ Hàng</h5>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Tạm tính:</span>
+                        <span class="fw-bold">@Model.Sum(x => x.Total).ToString("#,##0") đ</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span>Tổng tiền:</span>
+                        <span class="fw-bold text-danger fs-4">@Model.Sum(x => x.Total).ToString("#,##0") đ</span>
+                    </div>
+                    <a href="/Checkout/Index" class="btn btn-dark w-100 fw-bold py-2">TIẾN HÀNH THANH TOÁN</a>
+                    <a href="/" class="btn btn-outline-secondary w-100 mt-2">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fa-solid fa-cart-shopping fa-3x text-muted mb-3"></i>
+            <p>Giỏ hàng của bạn đang trống.</p>
+            <a href="/" class="btn btn-dark">Mua sắm ngay</a>
+        </div>
+    }
+</div>

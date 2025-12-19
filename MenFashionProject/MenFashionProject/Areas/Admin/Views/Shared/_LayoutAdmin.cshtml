@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin MenFashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS đơn giản cho Admin Sidebar */
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+
+            .sidebar a {
+                padding: 15px;
+                text-decoration: none;
+                font-size: 16px;
+                color: #fff;
+                display: block;
+            }
+
+                .sidebar a:hover {
+                    background-color: #495057;
+                }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3 class="text-center fw-bold mb-4 pt-3 text-white">ADMIN CP</h3>
+        <div class="d-flex flex-column">
+            <a href="/Admin/Home" class="py-3 px-4 text-decoration-none text-light hover-bg">
+                <i class="fa-solid fa-gauge me-2"></i> Dashboard
+            </a>
+
+            <a href="/Admin/Product" class="py-3 px-4 text-decoration-none text-light hover-bg">
+                <i class="fa-solid fa-shirt me-2"></i> Sản Phẩm
+            </a>
+
+            <a href="/Admin/Order" class="py-3 px-4 text-decoration-none text-light hover-bg">
+                <i class="fa-solid fa-file-invoice-dollar me-2"></i> Đơn Hàng
+            </a>
+
+            <a href="/Admin/User" class="py-3 px-4 text-decoration-none text-light hover-bg text-muted">
+                <i class="fa-solid fa-users me-2"></i> Khách Hàng
+            </a>
+        </div>
+
+        <hr class="border-secondary mx-3">
+
+        <a href="/" target="_blank" class="py-3 px-4 text-decoration-none text-warning">
+            <i class="fa-solid fa-arrow-left me-2"></i> Về trang bán hàng
+        </a>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar navbar-light bg-light mb-4 shadow-sm px-3 rounded">
+            <span class="navbar-brand mb-0 h1">Xin chào, Quản trị viên</span>
+            <button class="btn btn-outline-danger btn-sm">Đăng xuất</button>
+        </nav>
+
+        @RenderBody()
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

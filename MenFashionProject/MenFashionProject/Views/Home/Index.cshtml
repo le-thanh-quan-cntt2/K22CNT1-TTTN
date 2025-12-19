@@ -1,0 +1,138 @@
+﻿\Index.cshtml
+@model IEnumerable<MenFashionProject.Models.Product>
+
+@{
+    ViewData["Title"] = "Trang Chủ";
+}
+
+<div id="carouselExampleControls" class="carousel slide mb-5 shadow-sm" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/banner1.jpg" class="d-block w-100" alt="Banner Mùa Đông" style="height: 600px; object-fit: cover; object-position: center;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
+                <h2 class="fw-bold text-uppercase">Phong Cách Lịch Lãm</h2>
+                <p>Bộ sưu tập thời trang nam mới nhất 2025.</p>
+                <a href="#new-arrival" class="btn btn-light fw-bold px-4 rounded-pill">Mua Ngay</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/banner2.jpg" class="d-block w-100" alt="Banner Công Sở" style="height: 600px; object-fit: cover; object-position: top;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
+                <h2 class="fw-bold text-uppercase">Đẳng Cấp Doanh Nhân</h2>
+                <p>Vest và sơ mi cao cấp dành cho phái mạnh.</p>
+                <a href="#" class="btn btn-light fw-bold px-4 rounded-pill">Xem Chi Tiết</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Trước</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sau</span>
+    </button>
+</div>
+<div class="container mb-5">
+    <div class="card border-0 shadow-sm bg-light">
+        <div class="card-body p-4">
+            <form asp-controller="Home" asp-action="Index" method="get">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold">Tên sản phẩm</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" name="searchString" value="@ViewBag.SearchString" class="form-control" placeholder="Tìm áo, quần...">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold">Danh mục</label>
+                        <select name="categoryId" class="form-select">
+                            <option value="">-- Tất cả --</option>
+                            @if (ViewBag.Categories != null)
+                            {
+                                foreach (var cat in ViewBag.Categories)
+                                {
+                                    // Giữ lại lựa chọn cũ
+                                    if (ViewBag.CategoryId != null && (int)ViewBag.CategoryId == cat.CategoryId)
+                                    {
+                                        <option value="@cat.CategoryId" selected>@cat.CategoryName</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@cat.CategoryId">@cat.CategoryName</option>
+                                    }
+                                }
+                            }
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold">Khoảng giá</label>
+                        <div class="input-group">
+                            <input type="number" name="minPrice" value="@ViewBag.MinPrice" class="form-control" placeholder="Min">
+                            <span class="input-group-text">-</span>
+                            <input type="number" name="maxPrice" value="@ViewBag.MaxPrice" class="form-control" placeholder="Max">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-dark w-100 fw-bold">
+                            <i class="fa-solid fa-filter me-2"></i> Lọc
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase">Sản Phẩm Mới Nhất</h2>
+        <div class="d-flex justify-content-center">
+            <div style="width: 50px; height: 3px; background-color: #000;"></div>
+        </div>
+        <p class="text-secondary mt-2">Cập nhật xu hướng thời trang nam hiện đại</p>
+    </div>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-6 col-md-3 mb-4">
+                <div class="card border-0 h-100 shadow-sm product-card">
+                    <div class="position-relative overflow-hidden">
+                        <a href="/Product/Details/@item.ProductId">
+                            <img src="~/images/@item.Image" class="card-img-top" alt="@item.ProductName" style="height: 350px; object-fit: cover;">
+                        </a>
+                        @if (item.PriceSale > 0 && item.PriceSale < item.Price)
+                        {
+                            <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 small m-2">
+                                -@Math.Ceiling((1 - (decimal)item.PriceSale / (decimal)item.Price) * 100)%
+                            </span>
+                        }
+                    </div>
+
+                    <div class="card-body text-center d-flex flex-column">
+                        <p class="text-muted small mb-1">@item.Category?.CategoryName</p>
+                        <h6 class="card-title text-uppercase fw-bold mb-auto">
+                            <a href="/Product/Details/@item.ProductId" class="text-decoration-none text-dark">@item.ProductName</a>
+                        </h6>
+
+                        <div class="mt-2">
+                            @if (item.PriceSale > 0)
+                            {
+                                <span class="text-danger fw-bold me-2">@((item.PriceSale.HasValue) ? item.PriceSale.Value.ToString("#,##0") + " đ" : "")</span>
+                                <span class="text-secondary text-decoration-line-through small">@((item.Price.HasValue) ? item.Price.Value.ToString("#,##0") + " đ" : "")</span>
+                            }
+                            else
+                            {
+                                <span class="fw-bold">@((item.Price.HasValue) ? item.Price.Value.ToString("#,##0") + " đ" : "")</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

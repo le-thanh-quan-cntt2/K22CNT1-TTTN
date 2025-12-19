@@ -1,0 +1,32 @@
+﻿/* Font chữ toàn hệ thống */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+/* Hiệu ứng Menu */
+.navbar-nav .nav-link {
+    font-size: 14px;
+    letter-spacing: 1px; /* Khoảng cách chữ rộng ra chút cho sang */
+    transition: color 0.3s;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #d9534f !important; /* Màu đỏ khi di chuột */
+    }
+
+/* Icon Menu */
+.icon-menu a {
+    transition: transform 0.2s;
+}
+
+    .icon-menu a:hover {
+        transform: scale(1.1); /* Phóng to nhẹ khi di chuột */
+    }
+
+/* Footer Links */
+footer a:hover {
+    color: #fff !important;
+    padding-left: 5px; /* Hiệu ứng trượt nhẹ sang phải */
+    transition: all 0.3s;
+}

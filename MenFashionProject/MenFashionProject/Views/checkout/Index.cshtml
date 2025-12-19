@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Thanh Toán";
+    var cart = ViewBag.Cart as List<MenFashionProject.Models.CartItem>;
+    var total = (decimal)ViewBag.GrandTotal;
+}
+
+<div class="container py-5">
+    <h2 class="text-uppercase fw-bold mb-4 text-center">Xác Nhận Đơn Hàng</h2>
+
+    <form asp-controller="Checkout" asp-action="ProcessCheckout" method="post">
+        @if (ViewBag.IsBuyNow == true)
+        {
+            var item = cart.FirstOrDefault();
+            if (item != null)
+            {
+                <input type="hidden" name="productId" value="@item.ProductId" />
+                <input type="hidden" name="quantity" value="@item.Quantity" />
+            }
+        }
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card p-4 shadow-sm border-0 mb-4">
+                    <h5 class="fw-bold mb-3">Thông Tin Giao Hàng</h5>
+
+                    <div class="mb-3">
+                        <label class="form-label">Họ và tên người nhận</label>
+                        <input type="text" name="customerName" class="form-control" placeholder="VD: Nguyễn Văn A" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="text" name="phone" class="form-control" placeholder="VD: 0988xxxxxx" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email (Tùy chọn)</label>
+                            <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Địa chỉ nhận hàng</label>
+                        <textarea name="address" class="form-control" rows="3" placeholder="Số nhà, đường, phường/xã..." required></textarea>
+                    </div>
+
+                    <h5 class="fw-bold mt-4 mb-3">Phương Thức Thanh Toán</h5>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+                        <label class="form-check-label" for="cod">
+                            Thanh toán khi nhận hàng (COD)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="banking" disabled>
+                        <label class="form-check-label text-muted" for="banking">
+                            Chuyển khoản ngân hàng (Đang bảo trì)
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card p-4 bg-light border-0">
+                    <h5 class="fw-bold mb-3">Đơn Hàng Của Bạn</h5>
+
+                    <div class="mb-3" style="max-height: 300px; overflow-y: auto;">
+                        @foreach (var item in cart)
+                        {
+                            <div class="d-flex align-items-center mb-3 border-bottom pb-2">
+                                <img src="~/images/@item.Image" style="width: 50px; height: 50px; object-fit: cover;" class="rounded me-2">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0 small fw-bold">@item.ProductName</h6>
+                                    <small class="text-muted">x @item.Quantity</small>
+                                </div>
+                                <span class="fw-bold small">@item.Total.ToString("#,##0") đ</span>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Tạm tính:</span>
+                        <span class="fw-bold">@total.ToString("#,##0") đ</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span>Phí vận chuyển:</span>
+                        <span class="fw-bold text-success">Miễn phí</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="h5 fw-bold">Tổng Cộng:</span>
+                        <span class="h4 fw-bold text-danger">@total.ToString("#,##0") đ</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100 py-2 fw-bold text-uppercase">Đặt Hàng Ngay</button>
+                    <a href="/Cart" class="d-block text-center mt-3 text-secondary text-decoration-none small">Quay lại giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

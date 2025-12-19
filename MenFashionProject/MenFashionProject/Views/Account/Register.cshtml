@@ -1,0 +1,38 @@
+﻿@model MenFashionProject.Models.User
+@{
+    ViewData["Title"] = "Đăng Ký";
+}
+
+<div class="container py-5">
+    <div class="card shadow mx-auto" style="max-width: 500px;">
+        <div class="card-body p-4">
+            <h3 class="text-center fw-bold mb-4">Đăng Ký Tài Khoản</h3>
+
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+            <form asp-action="Register" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Họ và tên</label>
+                    <input asp-for="FullName" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input asp-for="Email" type="email" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mật khẩu</label>
+                    <input asp-for="Password" type="password" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-dark w-100 mb-3">Đăng Ký</button>
+                <div class="text-center">
+                    Đã có tài khoản? <a href="/Account/Login">Đăng nhập</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
