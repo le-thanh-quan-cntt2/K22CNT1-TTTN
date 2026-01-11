@@ -1,13 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Thanh Toán";
     var cart = ViewBag.Cart as List<MenFashionProject.Models.CartItem>;
-    var total = (decimal)ViewBag.GrandTotal;
+
+    // 👇 1. LẤY CÁC THÔNG SỐ TIỀN TỪ CONTROLLER
+    // (Lưu ý: Dùng ?? 0 để tránh lỗi nếu null)
+    var subTotal = (decimal)(ViewBag.SubTotal ?? 0);       // Tạm tính
+    var discountPercent = (int)(ViewBag.DiscountPercent ?? 0); // % Giảm
+    var discountAmount = (decimal)(ViewBag.DiscountAmount ?? 0); // Tiền giảm
+    var grandTotal = (decimal)(ViewBag.GrandTotal ?? 0);     // Tổng cộng
+
+    var user = ViewBag.User as MenFashionProject.Models.User;
 }
 
 <div class="container py-5">
     <h2 class="text-uppercase fw-bold mb-4 text-center">Xác Nhận Đơn Hàng</h2>
 
     <form asp-controller="Checkout" asp-action="ProcessCheckout" method="post">
+
+        @* --- KHU VỰC XỬ LÝ MUA NGAY --- *@
         @if (ViewBag.IsBuyNow == true)
         {
             var item = cart.FirstOrDefault();
@@ -15,8 +25,11 @@
             {
                 <input type="hidden" name="productId" value="@item.ProductId" />
                 <input type="hidden" name="quantity" value="@item.Quantity" />
+                <input type="hidden" name="size" value="@item.Size" />
+                <input type="hidden" name="color" value="@item.Color" />
             }
         }
+
         <div class="row">
             <div class="col-md-7">
                 <div class="card p-4 shadow-sm border-0 mb-4">
@@ -24,23 +37,31 @@
 
                     <div class="mb-3">
                         <label class="form-label">Họ và tên người nhận</label>
-                        <input type="text" name="customerName" class="form-control" placeholder="VD: Nguyễn Văn A" required>
+                        <input type="text" name="customerName" class="form-control" required
+                               placeholder="VD: Nguyễn Văn A"
+                               value="@(user != null ? user.FullName : "")">
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Số điện thoại</label>
-                            <input type="text" name="phone" class="form-control" placeholder="VD: 0988xxxxxx" required>
+                            <input type="text" name="phone" class="form-control" required
+                                   placeholder="VD: 0988xxxxxx"
+                                   value="@(user != null ? user.Phone : "")">
                         </div>
+
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Email (Tùy chọn)</label>
-                            <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
+                            <input type="email" name="email" class="form-control"
+                                   placeholder="example@gmail.com"
+                                   value="@(user != null ? user.Email : "")">
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Địa chỉ nhận hàng</label>
-                        <textarea name="address" class="form-control" rows="3" placeholder="Số nhà, đường, phường/xã..." required></textarea>
+                        <textarea name="address" class="form-control" rows="3" required
+                                  placeholder="Số nhà, đường, phường/xã...">@(user != null ? user.Address : "")</textarea>
                     </div>
 
                     <h5 class="fw-bold mt-4 mb-3">Phương Thức Thanh Toán</h5>
@@ -70,6 +91,12 @@
                                 <img src="~/images/@item.Image" style="width: 50px; height: 50px; object-fit: cover;" class="rounded me-2">
                                 <div class="flex-grow-1">
                                     <h6 class="mb-0 small fw-bold">@item.ProductName</h6>
+
+                                    <small class="d-block text-muted">
+                                        Size: <span class="fw-bold text-dark">@item.Size</span> |
+                                        Màu: <span class="fw-bold text-dark">@item.Color</span>
+                                    </small>
+
                                     <small class="text-muted">x @item.Quantity</small>
                                 </div>
                                 <span class="fw-bold small">@item.Total.ToString("#,##0") đ</span>
@@ -77,18 +104,37 @@
                         }
                     </div>
 
+                    @* 👇👇👇 KHU VỰC HIỂN THỊ TIỀN (ĐÃ SỬA) 👇👇👇 *@
+
+                    @* 1. Tạm tính *@
                     <div class="d-flex justify-content-between mb-2">
                         <span>Tạm tính:</span>
-                        <span class="fw-bold">@total.ToString("#,##0") đ</span>
+                        <span class="fw-bold">@subTotal.ToString("#,##0") đ</span>
                     </div>
-                    <div class="d-flex justify-content-between mb-4">
+
+                    @* 2. Phí vận chuyển *@
+                    <div class="d-flex justify-content-between mb-2">
                         <span>Phí vận chuyển:</span>
                         <span class="fw-bold text-success">Miễn phí</span>
                     </div>
+
+                    @* 3. HIỂN THỊ GIẢM GIÁ VIP (Nếu có) *@
+                    @if (discountPercent > 0)
+                    {
+                        <div class="d-flex justify-content-between mb-2 text-warning">
+                            <span>
+                                <i class="fa-solid fa-crown me-1"></i> Ưu đãi VIP (@discountPercent%):
+                            </span>
+                            <span class="fw-bold">-@discountAmount.ToString("#,##0") đ</span>
+                        </div>
+                    }
+
                     <hr>
+
+                    @* 4. Tổng cộng *@
                     <div class="d-flex justify-content-between mb-4">
                         <span class="h5 fw-bold">Tổng Cộng:</span>
-                        <span class="h4 fw-bold text-danger">@total.ToString("#,##0") đ</span>
+                        <span class="h4 fw-bold text-danger">@grandTotal.ToString("#,##0") đ</span>
                     </div>
 
                     <button type="submit" class="btn btn-dark w-100 py-2 fw-bold text-uppercase">Đặt Hàng Ngay</button>

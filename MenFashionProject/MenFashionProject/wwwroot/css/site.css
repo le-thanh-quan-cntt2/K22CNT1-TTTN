@@ -1,32 +1,277 @@
-﻿/* Font chữ toàn hệ thống */
+﻿/* --- 1. CẤU HÌNH CHUNG --- */
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
 }
-
-/* Hiệu ứng Menu */
-.navbar-nav .nav-link {
-    font-size: 14px;
-    letter-spacing: 1px; /* Khoảng cách chữ rộng ra chút cho sang */
-    transition: color 0.3s;
-}
-
-    .navbar-nav .nav-link:hover {
-        color: #d9534f !important; /* Màu đỏ khi di chuột */
-    }
-
-/* Icon Menu */
-.icon-menu a {
-    transition: transform 0.2s;
-}
-
-    .icon-menu a:hover {
-        transform: scale(1.1); /* Phóng to nhẹ khi di chuột */
-    }
 
 /* Footer Links */
 footer a:hover {
     color: #fff !important;
     padding-left: 5px; /* Hiệu ứng trượt nhẹ sang phải */
     transition: all 0.3s;
+}
+
+/* --- 2. MENU & HEADER (CODE MỚI ĐẸP) --- */
+.navbar-brand {
+    letter-spacing: 1px;
+    font-weight: 800 !important;
+}
+
+/* Hiệu ứng gạch chân Menu */
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 10px 15px !important;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 5px;
+        left: 50%;
+        background-color: #dc3545;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-50%);
+    }
+
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+        width: 80%;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #dc3545 !important;
+    }
+
+/* ================= DROPDOWN HOVER - FIX CLICK ================= */
+
+/* Desktop only */
+@media (min-width: 992px) {
+
+    /* Cho dropdown hoạt động bằng hover */
+    .navbar .dropdown {
+        position: relative;
+    }
+
+    .navbar .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        margin-top: 0; /* QUAN TRỌNG: xoá khoảng hở */
+        transform: translateY(10px);
+        transition: all 0.25s ease;
+    }
+
+    /* Hover vào menu cha -> hiện menu con */
+    .navbar .dropdown:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    /* Giữ menu khi hover vào menu con */
+    .navbar .dropdown-menu:hover {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+/* Icon Menu (Giỏ hàng, User) */
+.icon-menu a {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+}
+
+    .icon-menu a:hover {
+        transform: scale(1.2);
+        color: #dc3545 !important;
+    }
+
+.badge {
+    border: 2px solid #fff;
+}
+
+/* Logic Hover Menu trên PC */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        animation: slideUp 0.3s ease-in-out;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= PAGINATION ================= */
+
+.pagination-circle {
+    gap: 8px;
+}
+
+    /* Page item */
+    .pagination-circle .page-item .page-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid #dee2e6;
+        color: #111827;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease;
+        background-color: #fff;
+    }
+
+    /* Hover */
+    .pagination-circle .page-item:not(.active):not(.disabled) .page-link:hover {
+        background-color: #111827;
+        color: #fff;
+        border-color: #111827;
+        transform: translateY(-2px);
+    }
+
+    /* Active */
+    .pagination-circle .page-item.active .page-link {
+        background-color: #111827;
+        border-color: #111827;
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(17, 24, 39, 0.35);
+    }
+
+    /* Disabled */
+    .pagination-circle .page-item.disabled .page-link {
+        background-color: #f1f3f5;
+        color: #adb5bd;
+        border-color: #dee2e6;
+        pointer-events: none;
+    }
+
+    /* Prev / Next */
+    .pagination-circle .page-item:first-child .page-link,
+    .pagination-circle .page-item:last-child .page-link {
+        font-size: 18px;
+    }
+
+/* Mobile tối ưu */
+@media (max-width: 576px) {
+    .pagination-circle .page-item .page-link {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+
+/* ===============================
+   BANNER / CAROUSEL
+================================ */
+
+/* Tổng thể banner */
+#carouselExampleControls {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Ảnh banner */
+.banner-img {
+    height: 520px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: transform 6s ease;
+}
+
+/* Zoom nhẹ khi active */
+.carousel-item.active .banner-img {
+    transform: scale(1.05);
+}
+
+/* Caption */
+.carousel-caption {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+    /* Tiêu đề */
+    .carousel-caption h2 {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    /* Mô tả */
+    .carousel-caption p {
+        font-size: 1rem;
+        opacity: 0.9;
+        margin-bottom: 20px;
+    }
+
+    /* Nút CTA */
+    .carousel-caption .btn {
+        font-size: 0.95rem;
+        padding: 10px 28px;
+        transition: all 0.3s ease;
+    }
+
+        .carousel-caption .btn:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+/* Nút prev / next */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 60% 60%;
+    filter: invert(1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .banner-img {
+        height: 420px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-img {
+        height: 320px;
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+        padding: 12px;
+    }
+
+        .carousel-caption h2 {
+            font-size: 1.4rem;
+        }
+
+        .carousel-caption p {
+            font-size: 0.9rem;
+        }
 }

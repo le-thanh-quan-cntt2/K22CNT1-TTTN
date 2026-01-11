@@ -1,0 +1,22 @@
+﻿@model MenFashionProject.Models.News
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container py-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/News" class="text-dark">Tin tức</a></li>
+            <li class="breadcrumb-item active">@Model.Title</li>
+        </ol>
+    </nav>
+
+    <h1 class="fw-bold mt-3">@Model.Title</h1>
+    <p class="text-muted"><i class="fa-regular fa-calendar me-2"></i> @Model.CreatedDate.ToString("dd/MM/yyyy HH:mm")</p>
+
+    <img src="~/images/@Model.Image" class="img-fluid rounded my-4 w-100" style="max-height:500px; object-fit:cover">
+
+    <div class="content fs-5 lh-lg">
+        @Html.Raw(Model.Content)
+    </div>
+</div>

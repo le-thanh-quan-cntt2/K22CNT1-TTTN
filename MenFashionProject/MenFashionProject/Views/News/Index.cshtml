@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MenFashionProject.Models.News>
+@{
+    ViewData["Title"] = "Tin Tức Thời Trang";
+}
+
+<div class="container py-5">
+    <h2 class="fw-bold mb-4 text-center">TIN TỨC MỚI NHẤT</h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="~/images/@item.Image" class="card-img-top" style="height:200px; object-fit:cover">
+                    <div class="card-body">
+                        <h5 class="fw-bold">@item.Title</h5>
+                        <p class="text-muted small"><i class="fa-regular fa-clock me-1"></i> @item.CreatedDate.ToString("dd/MM/yyyy")</p>
+                        <p class="card-text text-secondary">@item.Summary</p>
+                        <a href="/News/Details/@item.NewsId" class="btn btn-outline-dark btn-sm">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

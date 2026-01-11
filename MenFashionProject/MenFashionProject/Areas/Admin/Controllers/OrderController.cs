@@ -49,5 +49,30 @@ namespace MenFashionProject.Areas.Admin.Controllers
             // Load lại trang chi tiết để thấy thay đổi
             return RedirectToAction("ViewOrder", new { id = id });
         }
+        // 4. Xóa đơn hàng
+        [HttpPost]
+        [ValidateAntiForgeryToken] // Bảo mật, chống giả mạo request
+        public IActionResult Delete(int id)
+        {
+            // Tìm đơn hàng và bao gồm cả chi tiết (OrderDetails)
+            var order = _context.Orders
+                .Include(o => o.OrderDetails) // Quan trọng: nạp chi tiết để xóa
+                .FirstOrDefault(o => o.OrderId == id);
+
+            if (order != null)
+            {
+                // 1. Xóa chi tiết đơn hàng trước (Tránh lỗi khóa ngoại FK)
+                _context.OrderDetails.RemoveRange(order.OrderDetails);
+
+                // 2. Xóa đơn hàng chính
+                _context.Orders.Remove(order);
+
+                // 3. Lưu thay đổi
+                _context.SaveChanges();
+            }
+
+            // Xóa xong quay về danh sách
+            return RedirectToAction("Index");
+        }
     }
 }

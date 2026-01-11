@@ -1,3 +1,13 @@
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.csproj.AssemblyReference.cache
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.AssemblyInfoInputs.cache
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.AssemblyInfo.cs
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.csproj.CoreCompileInputs.cache
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.MvcApplicationPartsAssemblyInfo.cache
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.RazorAssemblyInfo.cache
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.RazorAssemblyInfo.cs
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.sourcelink.json
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\appsettings.Development.json
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\appsettings.json
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\MenFashionProject.staticwebassets.runtime.json
@@ -33,6 +43,7 @@ D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debu
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\System.CodeDom.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -111,16 +122,6 @@ D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debu
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.csproj.AssemblyReference.cache
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\rpswa.dswa.cache.json
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.GeneratedMSBuildEditorConfig.editorconfig
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.AssemblyInfoInputs.cache
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.AssemblyInfo.cs
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.csproj.CoreCompileInputs.cache
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.MvcApplicationPartsAssemblyInfo.cache
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.RazorAssemblyInfo.cache
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.RazorAssemblyInfo.cs
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.sourcelink.json
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -138,4 +139,3 @@ D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debu
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.pdb
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\MenFashionProject.genruntimeconfig.cache
 D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\obj\Debug\net8.0\ref\MenFashionProject.dll
-D:\K22CNT-TTTN-LT.Quan\K22CNT1-TTTN\MenFashionProject\MenFashionProject\bin\Debug\net8.0\Newtonsoft.Json.dll

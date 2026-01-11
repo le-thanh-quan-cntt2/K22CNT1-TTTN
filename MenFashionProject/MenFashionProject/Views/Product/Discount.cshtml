@@ -1,0 +1,176 @@
+﻿@model IEnumerable<MenFashionProject.Models.Product>
+@{
+    ViewData["Title"] = "Săn Sale Giá Sốc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <style>
+        .product-img-wrap {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+        }
+
+            .product-img-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: opacity 0.4s ease-in-out;
+            }
+
+        .img-front {
+            z-index: 2;
+            opacity: 1;
+        }
+
+        .img-back {
+            z-index: 1;
+            opacity: 0;
+        }
+
+        /* Hover vào thì hiện ảnh sau */
+        .product-card:hover .img-front {
+            opacity: 0;
+        }
+
+        .product-card:hover .img-back {
+            opacity: 1;
+            z-index: 3;
+        }
+
+        /* Nút mua hàng ẩn hiện */
+        .product-action {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            transform: translateY(20px);
+        }
+
+        .product-card:hover .product-action {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+}
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-danger display-5">KHUYẾN MÃI HOT</h2>
+        <p class="text-secondary fs-5">Cơ hội mua sắm hàng hiệu với giá cực tốt</p>
+        <hr class="w-25 mx-auto border-danger border-2">
+    </div>
+
+    <div class="row">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100 product-card">
+                        <div class="position-relative">
+
+                            @if (item.PriceSale > 0 && item.Price > 0)
+                            {
+                                // Tính phần trăm giảm giá chính xác
+                                int percent = (int)((1 - (item.PriceSale.Value / item.Price)) * 100);
+                                <span class="badge bg-danger position-absolute top-0 start-0 m-2 z-3">
+                                    -@percent%
+                                </span>
+                            }
+
+                            <a href="/Product/Details/@item.ProductId" class="product-img-wrap d-block">
+                                <img src="~/images/@(item.Image ?? "no-image.png")" class="img-front" alt="@item.ProductName">
+
+                                @{
+                                    var backImg = item.ProductImages?.FirstOrDefault();
+                                }
+                                @if (backImg != null)
+                                {
+                                    <img src="~/images/@backImg.Url" class="img-back" alt="@item.ProductName">
+                                }
+                                else
+                                {
+                                    <img src="~/images/@(item.Image ?? "no-image.png")" class="img-back" alt="@item.ProductName">
+                                }
+                            </a>
+
+                            <div class="product-action position-absolute bottom-0 start-0 w-100 p-2 bg-transparent z-3">
+                                <button type="button"
+                                        class="btn btn-dark w-100 shadow fw-bold py-2"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal-@item.ProductId">
+                                    <i class="fa-solid fa-cart-shopping me-1"></i> THÊM
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h6 class="card-title fw-bold text-truncate">
+                                <a href="/Product/Details/@item.ProductId" class="text-decoration-none text-dark">
+                                    @item.ProductName
+                                </a>
+                            </h6>
+                            <div class="d-flex justify-content-center gap-2 align-items-center">
+                                @if (item.PriceSale > 0)
+                                {
+                                    <span class="text-danger fw-bold">
+                                        @item.PriceSale.Value.ToString("#,##0") đ
+                                    </span>
+                                    <span class="text-muted text-decoration-line-through small">
+                                        @item.Price.ToString("#,##0") đ
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="fw-bold">
+                                        @item.Price.ToString("#,##0") đ
+                                    </span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal-@item.ProductId" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title fw-bold">Chọn thuộc tính</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex gap-3 mb-3">
+                                    <img src="~/images/@(item.Image ?? "no-image.png")" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">@item.ProductName</h6>
+                                        <span class="text-danger fw-bold">
+                                            @((item.PriceSale > 0 ? item.PriceSale : item.Price)?.ToString("#,##0")) đ
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <a href="/Product/Details/@item.ProductId" class="btn btn-primary">
+                                        Xem chi tiết & Đặt hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="fa-solid fa-ticket fs-1 text-secondary mb-3"></i>
+                <p class="text-muted fs-5">Hiện chưa có chương trình khuyến mãi nào.</p>
+                <a href="/Product/Index" class="btn btn-dark mt-3 px-4 py-2">Xem tất cả sản phẩm</a>
+            </div>
+        }
+    </div>
+</div>

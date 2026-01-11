@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MenFashionProject.Models.News>
+@{
+    ViewData["Title"] = "Quản lý Tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold">Danh sách Tin tức</h4>
+        <a href="/Admin/News/Create" class="btn btn-success"><i class="fa-solid fa-plus me-2"></i> Thêm tin mới</a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body p-0">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th style="width: 100px;">Hình ảnh</th>
+                        <th>Tiêu đề</th>
+                        <th>Ngày đăng</th>
+                        <th class="text-end">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/images/@item.Image" style="width: 80px; height: 50px; object-fit: cover;" class="rounded border">
+                            </td>
+                            <td class="fw-bold">@item.Title</td>
+                            <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
+                            <td class="text-end">
+                                <a href="/Admin/News/Delete/@item.NewsId"
+                                   class="btn btn-sm btn-danger"
+                                   onclick="return confirm('Bạn có chắc muốn xóa tin này không?');">
+                                    <i class="fa-solid fa-trash"></i> Xóa
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

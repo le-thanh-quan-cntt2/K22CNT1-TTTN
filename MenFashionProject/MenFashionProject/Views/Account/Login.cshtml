@@ -1,29 +1,49 @@
 ﻿@{
     ViewData["Title"] = "Đăng Nhập";
 }
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
 
-<div class="container py-5">
-    <div class="card shadow mx-auto" style="max-width: 400px;">
+<div class="login-page">
+    <div class="card login-card">
         <div class="card-body p-4">
-            <h3 class="text-center fw-bold mb-4">Đăng Nhập</h3>
+            <h3 class="text-center mb-4">Đăng Nhập</h3>
 
             @if (ViewBag.Error != null)
             {
-                <div class="alert alert-danger">@ViewBag.Error</div>
+                <div class="alert alert-danger text-center">
+                    @ViewBag.Error
+                </div>
             }
 
-            <form asp-action="Login" method="post">
+            <form asp-action="Login"
+                  asp-route-returnUrl="@ViewBag.ReturnUrl"
+                  method="post">
+
                 <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input name="email" type="email" class="form-control" required />
+                    <label class="form-label fw-semibold">Email</label>
+                    <input name="email"
+                           type="email"
+                           class="form-control"
+                           placeholder="Nhập email"
+                           required />
                 </div>
+
                 <div class="mb-3">
-                    <label class="form-label">Mật khẩu</label>
-                    <input name="password" type="password" class="form-control" required />
+                    <label class="form-label fw-semibold">Mật khẩu</label>
+                    <input name="password"
+                           type="password"
+                           class="form-control"
+                           placeholder="Nhập mật khẩu"
+                           required />
                 </div>
-                <button type="submit" class="btn btn-dark w-100 mb-3">Đăng Nhập</button>
+
+                <button type="submit" class="btn btn-login w-100 mb-3">
+                    Đăng Nhập
+                </button>
+
                 <div class="text-center">
-                    Chưa có tài khoản? <a href="/Account/Register">Đăng ký ngay</a>
+                    Chưa có tài khoản?
+                    <a href="/Account/Register">Đăng ký ngay</a>
                 </div>
             </form>
         </div>

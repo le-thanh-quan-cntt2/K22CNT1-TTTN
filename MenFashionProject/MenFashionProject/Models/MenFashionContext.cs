@@ -30,6 +30,11 @@ public partial class MenFashionContext : DbContext
     public virtual DbSet<ProductImage> ProductImages { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<News> News { get; set; }
+    public virtual DbSet<Contact> Contacts { get; set; }
+    public DbSet<Voucher> Vouchers { get; set; }
+
+    public virtual DbSet<Review> Reviews { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.

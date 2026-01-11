@@ -1,0 +1,72 @@
+﻿@model MenFashionProject.Models.Contact
+@{
+    ViewData["Title"] = "Liên Hệ";
+}
+
+<div class="bg-light py-5 mb-5 text-center">
+    <div class="container">
+        <h1 class="fw-bold text-uppercase">Liên Hệ Với Chúng Tôi</h1>
+        <p class="text-muted">Chúng tôi luôn lắng nghe ý kiến của bạn</p>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-5 mb-4">
+            <div class="p-4 bg-dark text-white rounded h-100">
+                <h4 class="fw-bold mb-4">Thông Tin</h4>
+                <p><i class="fa-solid fa-location-dot me-3 text-danger"></i> 123 Lê Trọng Tấn,Hà Đông, Hà Nội</p>
+                <p><i class="fa-solid fa-phone me-3 text-danger"></i> 0399.770.912</p>
+                <p><i class="fa-solid fa-envelope me-3 text-danger"></i> hotro@menstore.vn</p>
+
+                <hr class="border-secondary my-4">
+
+                <h5 class="fw-bold">Giờ làm việc</h5>
+                <p class="mb-1">Thứ 2 - Thứ 6: 8:00 - 21:00</p>
+                <p>Thứ 7 - CN: 9:00 - 22:00</p>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success d-flex align-items-center mb-4">
+                    <i class="fa-solid fa-circle-check me-2 fs-4"></i>
+                    <div>@TempData["SuccessMessage"]</div>
+                </div>
+            }
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-4">Gửi tin nhắn</h4>
+                    <form asp-action="Send" method="post">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Họ tên *</label>
+                            <input asp-for="Name" class="form-control" placeholder="Nhập tên của bạn">
+                            <span asp-validation-for="Name" class="text-danger small"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Email *</label>
+                                <input asp-for="Email" class="form-control" placeholder="example@gmail.com">
+                                <span asp-validation-for="Email" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Số điện thoại</label>
+                                <input asp-for="Phone" class="form-control" placeholder="09xxxx">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Nội dung *</label>
+                            <textarea asp-for="Message" class="form-control" rows="5" placeholder="Bạn cần hỗ trợ gì?"></textarea>
+                            <span asp-validation-for="Message" class="text-danger small"></span>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 fw-bold py-2">
+                            <i class="fa-solid fa-paper-plane me-2"></i> GỬI NGAY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

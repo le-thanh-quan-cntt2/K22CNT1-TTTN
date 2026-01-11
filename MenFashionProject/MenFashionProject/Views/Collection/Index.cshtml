@@ -1,0 +1,102 @@
+﻿@model IEnumerable<MenFashionProject.Models.Category>
+@{
+    ViewData["Title"] = "Bộ Sưu Tập Thời Trang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    // Mảng ảnh dự phòng (Chỉ dùng khi danh mục trong DB không có ảnh)
+    string[] backupBanners = { "polo3.jpg", "p4.jpg", "p6.jpg", "dep1.jpg", "combo1.jpg", "somi1.jpg", "polo3.jpg", "thun1.jpg", "khoac1.jpg", "p5.jpg", "len1,2.jpg", "hoodie1.jpg", "quanau1.jpg", "jean1.jpg", "kaki1.jpg", "short1.jpg", "thatlung1.jpg", "vida1.jpg", "cavat2.jpg", "mu.jpg", "tat1", "giay1", "Giaysneaker.jpg","sandal1.jpg","dep2.jpg","combo1.jpg","combo2.jpg","combo3.jpg","p5.jpg","combo4.jpg"};
+    int i = 0;
+}
+
+<div class="container-fluid bg-light py-5 mb-5 text-center">
+    <h1 class="fw-bold display-5">BỘ SƯU TẬP 2025</h1>
+    <p class="text-secondary fs-5">Khám phá phong cách của riêng bạn</p>
+    <hr class="w-25 mx-auto border-dark border-2">
+</div>
+
+<div class="container">
+    @if (Model != null)
+    {
+        @foreach (var cat in Model)
+        {
+            // --- [SỬA ĐOẠN NÀY] ---
+            // 1. Ưu tiên lấy ảnh từ Database (cat.Image)
+            // 2. Nếu không có (null hoặc rỗng), thì mới lấy ảnh dự phòng từ mảng
+            string displayImage = !string.IsNullOrEmpty(cat.Image)
+            ? cat.Image
+            : backupBanners[i % backupBanners.Length];
+
+            // Đảo chiều hiển thị: Chẵn trái, Lẻ phải
+            if (i % 2 == 0)
+            {
+                <div class="row align-items-center mb-5 shadow-sm border rounded overflow-hidden">
+                    <div class="col-md-6 p-0">
+                        <img src="~/images/@displayImage" class="w-100" style="height: 400px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6 p-5 text-center text-md-start bg-white h-100">
+                        <h4 class="text-uppercase text-secondary ls-2">Bộ Sưu Tập</h4>
+                        <h2 class="fw-bold display-6 mb-3">@cat.CategoryName</h2>
+                        <p class="text-muted mb-4">@cat.Description</p>
+                        <a href="/Product/Index?categoryId=@cat.CategoryId" class="btn btn-dark px-4 py-2 rounded-0">
+                            XEM NGAY <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="row align-items-center mb-5 shadow-sm border rounded overflow-hidden">
+                    <div class="col-md-6 p-5 text-center text-md-end bg-white h-100 order-2 order-md-1">
+                        <h4 class="text-uppercase text-secondary ls-2">Xu Hướng Mới</h4>
+                        <h2 class="fw-bold display-6 mb-3">@cat.CategoryName</h2>
+                        <p class="text-muted mb-4">@cat.Description</p>
+                        <a href="/Product/Index?categoryId=@cat.CategoryId" class="btn btn-outline-dark px-4 py-2 rounded-0">
+                            KHÁM PHÁ <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6 p-0 order-1 order-md-2">
+                        <img src="~/images/@displayImage" class="w-100" style="height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            }
+            i++;
+        }
+    }
+    else
+    {
+        <p class="text-center">Đang cập nhật bộ sưu tập...</p>
+    }
+</div>
+
+<div class="container py-5 mt-5">
+    <h3 class="text-center fw-bold mb-4">PHONG CÁCH NỔI BẬT</h3>
+    <div class="row g-2">
+        <div class="col-md-4">
+            <div class="position-relative overflow-hidden group-hover">
+                <img src="~/images/p1.jpg" class="w-100 rounded" style="height:300px; object-fit:cover; filter: brightness(0.7);">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h4 class="fw-bold">CASUAL</h4>
+                    <a href="/Product/Index?searchString=ao" class="btn btn-sm btn-light mt-2">Xem Ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative overflow-hidden group-hover">
+                <img src="~/images/p5.jpg" class="w-100 rounded" style="height:300px; object-fit:cover; filter: brightness(0.7);">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h4 class="fw-bold">OFFICE</h4>
+                    <a href="/Product/Index?searchString=vest" class="btn btn-sm btn-light mt-2">Xem Ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative overflow-hidden group-hover">
+                <img src="~/images/p6.jpg" class="w-100 rounded" style="height:300px; object-fit:cover; filter: brightness(0.7);">
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h4 class="fw-bold">ACCESSORIES</h4>
+                    <a href="/Product/Index?categoryId=3" class="btn btn-sm btn-light mt-2">Xem Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

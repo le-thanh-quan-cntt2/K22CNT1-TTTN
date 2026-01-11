@@ -1,0 +1,1237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\cart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\menfashioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\menfashioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\admin\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\admin\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\product\\attributes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\product\\attributes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\product\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\product\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\admin\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\admin\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\product.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\product\\discount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\product\\discount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\policy\\checkorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\policy\\checkorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\policy\\shipping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\policy\\shipping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\policy\\return.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\policy\\return.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\policy\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\policy\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\policy\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\policy\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\collection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\collection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\news\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\news\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\productattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\productattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\collectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\collectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\account\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\account\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\account\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\account\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\wwwroot\\css\\product.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\wwwroot\\css\\product.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\shared\\components\\menucategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\shared\\components\\menucategory\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\viewcomponent\\menucategoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\viewcomponent\\menucategoryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\checkout\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\checkout\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\menfashiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\menfashiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\helpers\\mysessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\helpers\\mysessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\order\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\order\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|d:\\k22cnt-tttn-lt.quan\\k22cnt1-tttn\\menfashionproject\\menfashionproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C557AD31-8328-4A44-B072-D39A8084EC2C}|MenFashionProject\\MenFashionProject.csproj|solutionrelative:menfashionproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T04:33:59.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T04:31:30.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\CartController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAqwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T04:01:48.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswHUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T04:03:51.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cart.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\cart.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\cart.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\cart.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\cart.css",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAwwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-11T13:31:18.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenFashionContext.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\MenFashionContext.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\MenFashionContext.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\MenFashionContext.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\MenFashionContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T02:43:23.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\checkout\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\checkout\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\checkout\\Index.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAswIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T02:48:35.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T04:16:02.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T01:58:43.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Voucher.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Voucher.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\Voucher.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Voucher.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\Voucher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T13:46:22.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-31T02:28:13.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Product\\_ViewImports.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\_ViewImports.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Product\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T04:40:02.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "admin.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\admin\\admin.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\admin\\admin.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\admin\\admin.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\admin\\admin.css",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAwwK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-11T12:59:27.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T01:42:52.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "product.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\admin\\product.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\admin\\product.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\admin\\product.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\admin\\product.css",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-11T13:08:02.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-11T13:08:23.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "login.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\login.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\login.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-11T12:07:37.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Attributes.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Attributes.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Attributes.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Attributes.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Attributes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T03:43:38.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Discount.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Product\\Discount.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Product\\Discount.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Product\\Discount.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Product\\Discount.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T01:40:40.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-11T13:03:14.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "product.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\product.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\product.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\product.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\product.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-05T03:35:11.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T02:26:42.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAwJYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-10T02:17:53.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T02:32:10.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "register.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\register.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\register.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\register.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\register.css",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-11T12:10:03.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-31T02:47:57.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CheckOrder.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\CheckOrder.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Policy\\CheckOrder.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\CheckOrder.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Policy\\CheckOrder.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T02:14:15.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAAAEsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T02:26:13.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\CheckoutController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T02:23:23.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Policy\\Privacy.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\Privacy.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Policy\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T04:21:54.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Shipping.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\Shipping.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Policy\\Shipping.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\Shipping.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Policy\\Shipping.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T04:22:16.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Return.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\Return.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Policy\\Return.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\Return.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Policy\\Return.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T02:30:02.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FAQ.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\FAQ.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Policy\\FAQ.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Policy\\FAQ.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Policy\\FAQ.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T02:30:30.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T02:41:20.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Program.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Program.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Program.cs",
+              "RelativeToolTip": "MenFashionProject\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwD4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T02:15:38.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T03:24:42.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Collection\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Collection\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Collection\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Collection\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAYAAABSAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T03:41:24.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T04:26:04.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\News\\Details.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\News\\Details.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\News\\Details.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\News\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T02:48:01.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\News\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\News\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\News\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\News\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T02:48:03.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T01:45:20.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T04:34:30.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T01:50:11.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProductAttribute.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\ProductAttribute.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\ProductAttribute.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\ProductAttribute.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\ProductAttribute.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T03:38:30.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\Product.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Product.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\Product.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA6wDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T04:51:19.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\ProductImage.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\ProductImage.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T01:54:48.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T04:22:04.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\ContactController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T04:15:13.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CollectionController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\CollectionController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\CollectionController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\CollectionController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\CollectionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T01:29:09.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T01:32:09.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "product.css",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\product.css",
+              "RelativeDocumentMoniker": "MenFashionProject\\wwwroot\\css\\product.css",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\wwwroot\\css\\product.css",
+              "RelativeToolTip": "MenFashionProject\\wwwroot\\css\\product.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-01-05T03:35:00.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "OrderDetails.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\OrderDetails.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Account\\OrderDetails.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\OrderDetails.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Account\\OrderDetails.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T02:21:38.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\History.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Account\\History.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\History.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Account\\History.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T02:21:14.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "MenuCategoryViewComponent.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\ViewComponent\\MenuCategoryViewComponent.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\ViewComponent\\MenuCategoryViewComponent.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\ViewComponent\\MenuCategoryViewComponent.cs",
+              "RelativeToolTip": "MenFashionProject\\ViewComponent\\MenuCategoryViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T02:36:54.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Shared\\Components\\MenuCategory\\Default.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Shared\\Components\\MenuCategory\\Default.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Shared\\Components\\MenuCategory\\Default.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Shared\\Components\\MenuCategory\\Default.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T02:38:16.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-26T03:09:37.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\checkout\\Success.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\checkout\\Success.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\checkout\\Success.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\checkout\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-10T04:11:51.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MenFashionProject\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwMcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T02:44:05.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\OrderDetail.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T02:57:00.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\Contact.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Contact.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\Contact.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T04:14:18.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\Review.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Review.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T02:43:03.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\User.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\User.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA/wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T04:26:23.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "MenFashionDbContext.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\MenFashionDbContext.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\MenFashionDbContext.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\MenFashionDbContext.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\MenFashionDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T02:12:33.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "MySessionHelper.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Helpers\\MySessionHelper.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Helpers\\MySessionHelper.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Helpers\\MySessionHelper.cs",
+              "RelativeToolTip": "MenFashionProject\\Helpers\\MySessionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T03:58:29.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T04:27:32.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Customer\\Details.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Customer\\Details.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Customer\\Details.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Customer\\Details.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T04:29:28.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwEQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T04:22:54.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Customer\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T04:28:16.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\CartItem.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\CartItem.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T04:01:08.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T02:41:23.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ViewOrder.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T01:52:05.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\Order.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Order.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T04:09:10.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T02:41:24.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "MenFashionProject\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "MenFashionProject\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-16T01:51:37.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "MenFashionProject\\Models\\Category.cs",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\Models\\Category.cs",
+              "RelativeToolTip": "MenFashionProject\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T01:56:05.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\appsettings.json",
+              "RelativeDocumentMoniker": "MenFashionProject\\appsettings.json",
+              "ToolTip": "D:\\K22CNT-TTTN-LT.Quan\\K22CNT1-TTTN\\MenFashionProject\\MenFashionProject\\appsettings.json",
+              "RelativeToolTip": "MenFashionProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-10T02:15:00.919Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

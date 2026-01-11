@@ -6,7 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+// --- BẮT BUỘC PHẢI CÓ DÒNG NÀY ĐỂ SỬ DỤNG SESSION TRONG VIEW ---
+builder.Services.AddHttpContextAccessor();
 // 1. CẤU HÌNH DỊCH VỤ ĐĂNG NHẬP (Authentication Service)
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

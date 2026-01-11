@@ -1,0 +1,80 @@
+﻿@model MenFashionProject.Models.User
+@{
+    ViewData["Title"] = "Thông tin tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 mb-3">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-circle-user text-secondary" style="font-size: 80px;"></i>
+                    </div>
+                    <h5 class="fw-bold">@Model.FullName</h5>
+                    <p class="text-secondary small">@Model.Email</p>
+                </div>
+            </div>
+
+            <div class="list-group shadow-sm">
+                <a href="/Account/History" class="list-group-item list-group-item-action border-0">
+                    <i class="fa-solid fa-clock-rotate-left me-2"></i> Lịch sử mua hàng
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active bg-dark border-0">
+                    <i class="fa-solid fa-user me-2"></i> Thông tin tài khoản
+                </a>
+                <a href="/Account/Logout" class="list-group-item list-group-item-action text-danger border-0">
+                    <i class="fa-solid fa-right-from-bracket me-2"></i> Đăng xuất
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white py-3">
+                    <h5 class="fw-bold m-0 text-uppercase">Hồ sơ của tôi</h5>
+                </div>
+                <div class="card-body p-4">
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">
+                            <i class="fa-solid fa-check-circle me-2"></i> @TempData["SuccessMessage"]
+                        </div>
+                    }
+
+                    <form asp-action="UpdateProfile" method="post">
+                        <input type="hidden" name="UserId" value="@Model.UserId" />
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Họ và tên</label>
+                            <input type="text" name="FullName" class="form-control" value="@Model.FullName" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Số điện thoại</label>
+                                <input type="text" name="Phone" class="form-control" value="@Model.Phone" placeholder="Chưa cập nhật">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label fw-bold">Email</label>
+                                <input type="email" name="Email" class="form-control" value="@Model.Email" readonly style="background-color: #e9ecef;">
+                                <small class="text-muted">Email đăng nhập không thể thay đổi.</small>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Địa chỉ giao hàng mặc định</label>
+                            <textarea name="Address" class="form-control" rows="3" placeholder="Số nhà, đường, phường/xã...">@Model.Address</textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark px-4">
+                            <i class="fa-solid fa-save me-2"></i> Lưu thay đổi
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

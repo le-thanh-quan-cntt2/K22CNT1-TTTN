@@ -2,35 +2,57 @@
 @{
     ViewData["Title"] = "Đăng Ký";
 }
-
-<div class="container py-5">
-    <div class="card shadow mx-auto" style="max-width: 500px;">
+@section Styles {
+    <link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+}
+<div class="register-page">
+    <div class="card register-card">
         <div class="card-body p-4">
-            <h3 class="text-center fw-bold mb-4">Đăng Ký Tài Khoản</h3>
+            <h3 class="text-center mb-4">Đăng Ký Tài Khoản</h3>
 
-            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+            <div asp-validation-summary="All" class="text-danger mb-3 text-center"></div>
 
             @if (ViewBag.Error != null)
             {
-                <div class="alert alert-danger">@ViewBag.Error</div>
+                <div class="alert alert-danger text-center">
+                    @ViewBag.Error
+                </div>
             }
 
             <form asp-action="Register" method="post">
                 <div class="mb-3">
-                    <label class="form-label">Họ và tên</label>
-                    <input asp-for="FullName" class="form-control" required />
+                    <label class="form-label fw-semibold">Họ và tên</label>
+                    <input asp-for="FullName"
+                           class="form-control"
+                           placeholder="Nhập họ và tên"
+                           required />
                 </div>
+
                 <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input asp-for="Email" type="email" class="form-control" required />
+                    <label class="form-label fw-semibold">Email</label>
+                    <input asp-for="Email"
+                           type="email"
+                           class="form-control"
+                           placeholder="Nhập email"
+                           required />
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Mật khẩu</label>
-                    <input asp-for="Password" type="password" class="form-control" required />
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">Mật khẩu</label>
+                    <input asp-for="Password"
+                           type="password"
+                           class="form-control"
+                           placeholder="Nhập mật khẩu"
+                           required />
                 </div>
-                <button type="submit" class="btn btn-dark w-100 mb-3">Đăng Ký</button>
+
+                <button type="submit" class="btn btn-register w-100 mb-3">
+                    Đăng Ký
+                </button>
+
                 <div class="text-center">
-                    Đã có tài khoản? <a href="/Account/Login">Đăng nhập</a>
+                    Đã có tài khoản?
+                    <a href="/Account/Login">Đăng nhập</a>
                 </div>
             </form>
         </div>

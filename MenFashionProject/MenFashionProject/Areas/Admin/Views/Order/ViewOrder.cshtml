@@ -8,7 +8,21 @@
 <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h4 class="fw-bold">Chi tiết đơn hàng: <span class="text-danger">#@Model.Code</span></h4>
-        <a href="/Admin/Order" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+
+        <div>
+            <a href="/Admin/Order" class="btn btn-secondary me-2">
+                <i class="fa-solid fa-arrow-left"></i> Quay lại
+            </a>
+
+            <form action="/Admin/Order/Delete" method="post" style="display:inline-block"
+                  onsubmit="return confirm('CẢNH BÁO: Bạn có chắc chắn muốn xóa đơn hàng này không? Hành động này không thể hoàn tác!');">
+
+                @Html.AntiForgeryToken() <input type="hidden" name="id" value="@Model.OrderId" />
+                <button type="submit" class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i> Xóa đơn hàng
+                </button>
+            </form>
+        </div>
     </div>
 
     <div class="row">

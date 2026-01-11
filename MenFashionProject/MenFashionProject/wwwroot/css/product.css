@@ -1,0 +1,32 @@
+﻿/* --- HIỆU ỨNG CARD SẢN PHẨM --- */
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột */
+}
+
+/* --- ĐÁNH GIÁ SAO (RATING) --- */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #f39c12; /* Màu vàng cam */
+        }

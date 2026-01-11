@@ -1,0 +1,134 @@
+﻿@model IEnumerable<MenFashionProject.Models.Order>
+@{
+    ViewData["Title"] = "Lịch sử mua hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    decimal total = ViewBag.TotalSpent;
+    string rank = ViewBag.Rank;
+
+    // Tính % để chạy thanh tiến trình (Target mốc tiếp theo)
+    decimal target = 0;
+    string nextRank = "";
+    if (rank == "Member") { target = 2000000; nextRank = "Silver"; }
+    else if (rank == "Silver") { target = 5000000; nextRank = "Gold"; }
+    else if (rank == "Gold") { target = 10000000; nextRank = "Diamond"; }
+    else { target = total; nextRank = "Max Level"; }
+
+    var percent = (target > 0) ? (total / target) * 100 : 100;
+}
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 text-white"
+                 style="background: linear-gradient(45deg, #1e1e1e, #3a3a3a);">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold">THẺ THÀNH VIÊN</h5>
+                        <i class="fa-solid fa-crown fs-3 text-warning"></i>
+                    </div>
+                    <div class="mt-3">
+                        <p class="mb-0 text-white-50">Xin chào,</p>
+                        <h4 class="fw-bold">@ViewBag.User.FullName</h4>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="badge bg-warning text-dark">@rank</span>
+                            <small>@total.ToString("#,##0") đ / @target.ToString("#,##0") đ</small>
+                        </div>
+                        <div class="progress" style="height: 6px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: @percent%"></div>
+                        </div>
+                        <small class="text-white-50 mt-2 d-block">
+                            @(rank == "Diamond" ? "Bạn đã đạt cấp tối đa!" : $"Cần mua thêm {(target - total).ToString("#,##0")} đ để lên {nextRank}")
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group mt-3 shadow-sm">
+                <a href="#" class="list-group-item list-group-item-action active bg-dark border-0">
+                    <i class="fa-solid fa-clock-rotate-left me-2"></i> Lịch sử mua hàng
+                </a>
+                <a href="/Account/Profile" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user me-2"></i> Thông tin tài khoản
+                </a>
+                <a href="/Account/Logout" class="list-group-item list-group-item-action text-danger">
+                    <i class="fa-solid fa-right-from-bracket me-2"></i> Đăng xuất
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <h4 class="fw-bold mb-3">Đơn hàng của tôi</h4>
+            @if (Model.Count() > 0)
+            {
+                <div class="card shadow-sm border-0">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Mã đơn</th>
+                                <th>Ngày đặt</th>
+                                <th>Tổng tiền</th>
+                                <th>Trạng thái</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="fw-bold text-primary">#@item.Code</td>
+                                    <td>@item.CreatedDate?.ToString("dd/MM/yyyy")</td>
+                                    <td class="fw-bold">@((item.TotalAmount ?? 0).ToString("#,##0")) đ</td>
+                                    <td>
+                                        @if (item.Status == 1)
+                                        {
+                                            <span class="badge bg-secondary">Chờ xác nhận</span>
+                                        }
+                                        else if (item.Status == 2)
+                                        {
+                                            <span class="badge bg-info">Đóng gói</span>
+                                        }
+                                        else if (item.Status == 3)
+                                        {
+                                            <span class="badge bg-primary">Đang giao</span>
+                                        }
+                                        else if (item.Status == 4)
+                                        {
+                                            <span class="badge bg-success">Hoàn thành</span>
+
+                                            <div class="mt-1">
+                                                <a href="/Account/OrderDetails/@item.OrderId" class="text-decoration-none small text-warning fw-bold">
+                                                    <i class="fa-regular fa-star"></i> Đánh giá ngay
+                                                </a>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">Đã hủy</span>
+                                        }
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="/Account/OrderDetails/@item.OrderId" class="btn btn-sm btn-outline-dark">
+                                            Xem chi tiết
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5 bg-light rounded">
+                    <i class="fa-solid fa-box-open fs-1 text-secondary mb-3"></i>
+                    <p>Bạn chưa có đơn hàng nào.</p>
+                    <a href="/Product" class="btn btn-dark">Mua sắm ngay</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

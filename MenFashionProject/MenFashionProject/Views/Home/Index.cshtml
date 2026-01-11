@@ -1,14 +1,15 @@
-﻿\Index.cshtml
-@model IEnumerable<MenFashionProject.Models.Product>
+﻿@model IEnumerable<MenFashionProject.Models.Product>
 
 @{
-    ViewData["Title"] = "Trang Chủ";
+    ViewData["Title"] = "Trang chủ";
+    var categories = ViewBag.Categories as List<MenFashionProject.Models.Category> ?? new List<MenFashionProject.Models.Category>();
 }
 
-<div id="carouselExampleControls" class="carousel slide mb-5 shadow-sm" data-bs-ride="carousel" data-bs-interval="3000">
+@* --- BANNER SLIDER --- *@
+<div id="carouselExampleControls" class="carousel slide mb-5 shadow-sm" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="~/images/banner1.jpg" class="d-block w-100" alt="Banner Mùa Đông" style="height: 600px; object-fit: cover; object-position: center;">
+            <img src="~/images/banner1.jpg" class="d-block w-100 banner-img" alt="Banner Mùa Đông">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
                 <h2 class="fw-bold text-uppercase">Phong Cách Lịch Lãm</h2>
                 <p>Bộ sưu tập thời trang nam mới nhất 2025.</p>
@@ -16,7 +17,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="~/images/banner2.jpg" class="d-block w-100" alt="Banner Công Sở" style="height: 600px; object-fit: cover; object-position: top;">
+            <img src="~/images/banner2.jpg" class="d-block w-100 banner-img" alt="Banner Công Sở">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3 mb-4">
                 <h2 class="fw-bold text-uppercase">Đẳng Cấp Doanh Nhân</h2>
                 <p>Vest và sơ mi cao cấp dành cho phái mạnh.</p>
@@ -24,6 +25,7 @@
             </div>
         </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Trước</span>
@@ -33,28 +35,28 @@
         <span class="visually-hidden">Sau</span>
     </button>
 </div>
-<div class="container mb-5">
-    <div class="card border-0 shadow-sm bg-light">
-        <div class="card-body p-4">
-            <form asp-controller="Home" asp-action="Index" method="get">
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <label class="form-label fw-bold">Tên sản phẩm</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" name="searchString" value="@ViewBag.SearchString" class="form-control" placeholder="Tìm áo, quần...">
-                        </div>
-                    </div>
 
-                    <div class="col-md-3">
-                        <label class="form-label fw-bold">Danh mục</label>
-                        <select name="categoryId" class="form-select">
-                            <option value="">-- Tất cả --</option>
-                            @if (ViewBag.Categories != null)
-                            {
-                                foreach (var cat in ViewBag.Categories)
+<div class="container mb-5" id="new-arrival">
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white fw-bold">
+                    <i class="fa-solid fa-filter me-2"></i> BỘ LỌC TÌM KIẾM
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Home" asp-action="Index" method="get">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Tên sản phẩm</label>
+                            <input type="text" name="searchString" class="form-control form-control-sm"
+                                   value="@ViewBag.SearchString" placeholder="Nhập tên...">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Danh mục</label>
+                            <select name="categoryId" class="form-select form-select-sm">
+                                <option value="">-- Tất cả --</option>
+                                @foreach (var cat in categories)
                                 {
-                                    // Giữ lại lựa chọn cũ
                                     if (ViewBag.CategoryId != null && (int)ViewBag.CategoryId == cat.CategoryId)
                                     {
                                         <option value="@cat.CategoryId" selected>@cat.CategoryName</option>
@@ -64,75 +66,148 @@
                                         <option value="@cat.CategoryId">@cat.CategoryName</option>
                                     }
                                 }
-                            }
-                        </select>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label class="form-label fw-bold">Khoảng giá</label>
-                        <div class="input-group">
-                            <input type="number" name="minPrice" value="@ViewBag.MinPrice" class="form-control" placeholder="Min">
-                            <span class="input-group-text">-</span>
-                            <input type="number" name="maxPrice" value="@ViewBag.MaxPrice" class="form-control" placeholder="Max">
+                            </select>
                         </div>
-                    </div>
 
-                    <div class="col-md-2 d-flex align-items-end">
-                        <button type="submit" class="btn btn-dark w-100 fw-bold">
-                            <i class="fa-solid fa-filter me-2"></i> Lọc
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Mức giá</label>
+                            <div class="d-flex gap-2">
+                                <input type="number" name="minPrice" class="form-control form-control-sm"
+                                       placeholder="Min" value="@ViewBag.MinPrice">
+                                <span class="align-self-center">-</span>
+                                <input type="number" name="maxPrice" class="form-control form-control-sm"
+                                       placeholder="Max" value="@ViewBag.MaxPrice">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100 btn-sm">
+                            <i class="fa-solid fa-magnifying-glass me-2"></i>Áp dụng
                         </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="text-center mb-5">
-        <h2 class="fw-bold text-uppercase">Sản Phẩm Mới Nhất</h2>
-        <div class="d-flex justify-content-center">
-            <div style="width: 50px; height: 3px; background-color: #000;"></div>
-        </div>
-        <p class="text-secondary mt-2">Cập nhật xu hướng thời trang nam hiện đại</p>
-    </div>
-
-    <div class="row">
-        @foreach (var item in Model)
-        {
-            <div class="col-6 col-md-3 mb-4">
-                <div class="card border-0 h-100 shadow-sm product-card">
-                    <div class="position-relative overflow-hidden">
-                        <a href="/Product/Details/@item.ProductId">
-                            <img src="~/images/@item.Image" class="card-img-top" alt="@item.ProductName" style="height: 350px; object-fit: cover;">
-                        </a>
-                        @if (item.PriceSale > 0 && item.PriceSale < item.Price)
-                        {
-                            <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 small m-2">
-                                -@Math.Ceiling((1 - (decimal)item.PriceSale / (decimal)item.Price) * 100)%
-                            </span>
-                        }
-                    </div>
-
-                    <div class="card-body text-center d-flex flex-column">
-                        <p class="text-muted small mb-1">@item.Category?.CategoryName</p>
-                        <h6 class="card-title text-uppercase fw-bold mb-auto">
-                            <a href="/Product/Details/@item.ProductId" class="text-decoration-none text-dark">@item.ProductName</a>
-                        </h6>
-
-                        <div class="mt-2">
-                            @if (item.PriceSale > 0)
-                            {
-                                <span class="text-danger fw-bold me-2">@((item.PriceSale.HasValue) ? item.PriceSale.Value.ToString("#,##0") + " đ" : "")</span>
-                                <span class="text-secondary text-decoration-line-through small">@((item.Price.HasValue) ? item.Price.Value.ToString("#,##0") + " đ" : "")</span>
-                            }
-                            else
-                            {
-                                <span class="fw-bold">@((item.Price.HasValue) ? item.Price.Value.ToString("#,##0") + " đ" : "")</span>
-                            }
-                        </div>
-                    </div>
+                        <a href="/" class="btn btn-outline-secondary w-100 btn-sm mt-2">Bỏ lọc</a>
+                    </form>
                 </div>
             </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold">Sản phẩm mới nhất</h5>
+                <span class="text-secondary small">Tìm thấy @Model.Count() sản phẩm</span>
+            </div>
+
+            <div class="row">
+                @if (Model.Count() == 0)
+                {
+                    <div class="col-12 text-center py-5">
+                        <i class="fa-solid fa-box-open fs-1 text-secondary mb-3"></i>
+                        <p>Không tìm thấy sản phẩm nào phù hợp.</p>
+                    </div>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="col-6 col-md-4 mb-4">
+                            <div class="card h-100 border-0 shadow-sm product-card">
+                                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId" class="position-relative overflow-hidden">
+                                    <img src="~/images/@(item.Image ?? "no-image.png")" class="card-img-top"
+                                         style="height: 250px; object-fit: cover; transition: transform 0.3s;">
+
+                                    @if (item.PriceSale > 0)
+                                    {
+                                        <span class="position-absolute top-0 start-0 bg-danger text-white small px-2 py-1 m-2 rounded">
+                                            SALE
+                                        </span>
+                                    }
+                                </a>
+
+                                <div class="card-body text-center">
+                                    <h6 class="card-title text-truncate">
+                                        <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId"
+                                           class="text-decoration-none text-dark fw-bold">
+                                            @item.ProductName
+                                        </a>
+                                    </h6>
+
+                                    <div class="mt-2">
+                                        @if (item.PriceSale.HasValue && item.PriceSale > 0)
+                                        {
+                                            <span class="text-danger fw-bold me-2">
+                                                @item.PriceSale.Value.ToString("#,##0") đ
+                                            </span>
+
+                                            <small class="text-muted text-decoration-line-through">
+                                                @item.Price.ToString("#,##0") đ
+                                            </small>
+                                        }
+                                        else
+                                        {
+                                            <span class="fw-bold">
+                                                @item.Price.ToString("#,##0") đ
+                                            </span>
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="card-footer bg-white border-top-0 d-grid">
+                                    <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId"
+                                       class="btn btn-outline-dark btn-sm">
+                                        Xem chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+        @if (ViewBag.TotalPages > 1)
+        {
+            int current = ViewBag.CurrentPage;
+            int total = ViewBag.TotalPages;
+
+            <nav class="mt-4">
+                <ul class="pagination justify-content-center pagination-circle">
+                    @* Code phân trang giữ nguyên như cũ *@
+                    @if (current > 1)
+                    {
+                        <li class="page-item"><a class="page-link" href="?page=1">&laquo;</a></li>
+                    }
+                    @if (current > 1)
+                    {
+                        <li class="page-item"><a class="page-link" href="?page=@(current - 1)">&#8249;</a></li>
+                    }
+
+                    <li class="page-item @(current == 1 ? "active" : "")"><a class="page-link" href="?page=1">1</a></li>
+
+                    @if (current > 3)
+                    {
+                        <li class="page-item disabled"><span class="page-link">...</span></li>
+                    }
+
+                    @for (int i = Math.Max(2, current - 1); i <= Math.Min(total - 1, current + 1); i++)
+                    {
+                        if (i == 1 || i == total) continue;
+                        <li class="page-item @(i == current ? "active" : "")"><a class="page-link" href="?page=@i">@i</a></li>
+                    }
+
+                    @if (current < total - 2)
+                    {
+                        <li class="page-item disabled"><span class="page-link">...</span></li>
+                    }
+
+                    @if (total > 1)
+                    {
+                        <li class="page-item @(current == total ? "active" : "")"><a class="page-link" href="?page=@total">@total</a></li>
+                    }
+
+                    @if (current < total)
+                    {
+                        <li class="page-item"><a class="page-link" href="?page=@(current + 1)">&#8250;</a></li>
+                    }
+                </ul>
+            </nav>
         }
     </div>
 </div>

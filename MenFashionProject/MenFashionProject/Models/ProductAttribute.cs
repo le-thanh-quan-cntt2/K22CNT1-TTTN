@@ -1,19 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MenFashionProject.Models;
-
-public partial class ProductAttribute
+namespace MenFashionProject.Models
 {
-    public int AttributeId { get; set; }
+    [Table("ProductAttributes")]
+    public class ProductAttribute
+    {
+        [Key]
+        public int AttributeId { get; set; }
 
-    public int? ProductId { get; set; }
+        // SQL: ProductId INT NULL => C#: int?
+        public int? ProductId { get; set; }
 
-    public string Size { get; set; } = null!;
+        [Required]
+        [StringLength(10)]
+        public string Size { get; set; } = null!;
 
-    public string Color { get; set; } = null!;
+        [Required]
+        [StringLength(50)]
+        public string Color { get; set; } = null!;
 
-    public int? Quantity { get; set; }
+        // SQL: Quantity INT DEFAULT 0 => C#: int (vì logic code cần số lượng cụ thể)
+        public int? Quantity { get; set; } = 0;
 
-    public virtual Product? Product { get; set; }
+        [ForeignKey("ProductId")]
+        public virtual Product? Product { get; set; }
+    }
 }

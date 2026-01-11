@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Kiểm Tra Đơn Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow border-0">
+                <div class="card-body p-5">
+                    <h3 class="fw-bold text-center mb-4">TRA CỨU ĐƠN HÀNG</h3>
+                    <p class="text-center text-muted mb-4">Nhập mã đơn hàng và số điện thoại để theo dõi hành trình.</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Mã đơn hàng</label>
+                            <input type="text" class="form-control" placeholder="VD: DH638381...">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Số điện thoại đặt hàng</label>
+                            <input type="text" class="form-control" placeholder="Nhập số điện thoại...">
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2">TRA CỨU NGAY</button>
+                    </form>
+
+                    <hr class="my-4">
+                    <div class="text-center">
+                        <p class="small text-muted">Bạn đã có tài khoản?</p>
+                        <a href="/Account/Login" class="btn btn-outline-dark btn-sm">Đăng nhập để xem lịch sử</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

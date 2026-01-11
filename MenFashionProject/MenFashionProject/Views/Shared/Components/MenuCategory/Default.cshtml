@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MenFashionProject.Models.Category>
+
+@{
+    // Lấy danh mục CHA (ParentId là null)
+    var parents = Model.Where(x => x.ParentId == null).ToList();
+}
+
+@foreach (var parent in parents)
+{
+    // Tìm danh mục CON
+    var childs = Model.Where(x => x.ParentId == parent.CategoryId).ToList();
+
+    if (childs.Count > 0)
+    {
+        // TRƯỜNG HỢP CÓ MENU CON (Dropdown)
+        <li class="nav-item dropdown">
+            <a class="nav-link text-dark text-uppercase fw-bold"
+               href="/Product/Index?categoryId=@parent.CategoryId"
+               id="navbarDropdown_@parent.CategoryId"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+                @parent.CategoryName
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown_@parent.CategoryId">
+                @foreach (var child in childs)
+                {
+                    <li>
+                        <a class="dropdown-item" href="/Product/Index?categoryId=@child.CategoryId">
+                            @child.CategoryName
+                        </a>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+    else
+    {
+        // TRƯỜNG HỢP KHÔNG CÓ MENU CON (Link thường)
+        <li class="nav-item">
+            <a class="nav-link text-dark text-uppercase fw-bold" href="/Product/Index?categoryId=@parent.CategoryId">
+                @parent.CategoryName
+            </a>
+        </li>
+    }
+}

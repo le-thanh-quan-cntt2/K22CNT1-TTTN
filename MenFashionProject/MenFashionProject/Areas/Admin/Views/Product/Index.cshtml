@@ -5,47 +5,117 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h4 class="fw-bold">Danh sách Sản phẩm</h4>
-    <a href="/Admin/Product/Create" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Thêm mới</a>
+@section Styles {
+    <link rel="stylesheet" href="~/css/admin/product.css" asp-append-version="true" />
+}
+
+<!-- ================= HEADER ================= -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h4 class="page-title">Danh sách sản phẩm</h4>
+    <a href="/Admin/Product/Create" class="btn btn-primary btn-icon">
+        <i class="fa-solid fa-plus"></i>
+        Thêm mới
+    </a>
 </div>
 
-<div class="card shadow-sm border-0">
+<!-- ================= FILTER ================= -->
+<div class="card admin-card mb-4">
+    <div class="card-body">
+        <form method="get" class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">Danh mục</label>
+                <select name="categoryId" class="form-select">
+                    <option value="">-- Tất cả danh mục --</option>
+                    @foreach (var cat in (List<MenFashionProject.Models.Category>)ViewBag.Categories)
+                    {
+                        <option value="@cat.CategoryId"
+                                selected="@(ViewBag.CategoryId == cat.CategoryId)">
+                            @cat.CategoryName
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-dark w-100">
+                    <i class="fa-solid fa-filter"></i> Lọc
+                </button>
+            </div>
+
+            <div class="col-md-2">
+                <a href="/Admin/Product" class="btn btn-outline-secondary w-100">
+                    Bỏ lọc
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- ================= TABLE ================= -->
+<div class="card admin-card">
     <div class="card-body p-0">
-        <table class="table table-hover align-middle mb-0">
-            <thead>
-                <tr>
-                    <th>Hình ảnh</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Giá tiền</th>
-                    <th>Tổng Tồn Kho</th>
-                    <th>Hành động</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+        <div class="table-responsive">
+            <table class="table admin-table align-middle mb-0">
+                <thead>
                     <tr>
-                        <td><img src="~/images/@item.Image" width="50" /></td>
-                        <td>@item.ProductName</td>
-                        <td>@string.Format("{0:#,##0}", item.Price) đ</td>
-
-                        <td class="fw-bold text-center">
-                            @item.ProductAttributes.Sum(x => x.Quantity)
-                        </td>
-
-                        <td>
-                            <a asp-action="Attributes" asp-route-id="@item.ProductId" class="btn btn-sm btn-warning">
-                                <i class="fa-solid fa-list"></i> Size/Màu
-                            </a>
-
-                            <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-sm btn-danger" onclick="return confirm('Xóa?')">
-                                Xóa
-                            </a>
-                        </td>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Danh mục</th>
+                        <th>Giá tiền</th>
+                        <th class="text-center">Tồn kho</th>
+                        <th class="text-center">Hành động</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/images/@item.Image" class="product-thumb" />
+                            </td>
+
+                            <td>
+                                <div class="fw-semibold">@item.ProductName</div>
+                            </td>
+
+                            <td>
+                                <span class="badge bg-light text-dark border">
+                                    @item.Category?.CategoryName
+                                </span>
+                            </td>
+
+                            <td class="fw-bold text-danger">
+                                @string.Format("{0:#,##0}", item.Price) đ
+                            </td>
+
+                            <td class="fw-bold text-center">
+                                @item.ProductAttributes.Sum(x => x.Quantity)
+                            </td>
+
+                            <td class="text-center">
+                                <a asp-action="Attributes"
+                                   asp-route-id="@item.ProductId"
+                                   class="btn btn-sm btn-warning action-btn">
+                                    <i class="fa-solid fa-list"></i>
+                                </a>
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.ProductId"
+                                   class="btn btn-sm btn-info text-white action-btn">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
+
+                                <a asp-action="Delete"
+                                   asp-route-id="@item.ProductId"
+                                   class="btn btn-sm btn-danger action-btn"
+                                   onclick="return confirm('Xóa sản phẩm này?')">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

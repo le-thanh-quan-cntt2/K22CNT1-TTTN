@@ -3,76 +3,89 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>@ViewData["Title"] - Admin MenFashion</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* CSS đơn giản cho Admin Sidebar */
-        .sidebar {
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 250px;
-            background-color: #343a40;
-            padding-top: 20px;
-        }
 
-            .sidebar a {
-                padding: 15px;
-                text-decoration: none;
-                font-size: 16px;
-                color: #fff;
-                display: block;
-            }
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-                .sidebar a:hover {
-                    background-color: #495057;
-                }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+          rel="stylesheet">
 
-        .main-content {
-            margin-left: 250px;
-            padding: 20px;
-        }
-    </style>
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="~/css/admin/admin.css" asp-append-version="true" />
+
+    @RenderSection("Styles", required: false)
 </head>
 <body>
-    <div class="sidebar">
-        <h3 class="text-center fw-bold mb-4 pt-3 text-white">ADMIN CP</h3>
-        <div class="d-flex flex-column">
-            <a href="/Admin/Home" class="py-3 px-4 text-decoration-none text-light hover-bg">
-                <i class="fa-solid fa-gauge me-2"></i> Dashboard
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <h3 class="text-center fw-bold mb-4 pt-3 text-white">
+            ADMIN CP
+        </h3>
+
+        <nav class="sidebar-menu">
+            <a href="/Admin/Home" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")">
+                <i class="fa-solid fa-gauge"></i> Dashboard
             </a>
 
-            <a href="/Admin/Product" class="py-3 px-4 text-decoration-none text-light hover-bg">
-                <i class="fa-solid fa-shirt me-2"></i> Sản Phẩm
+            <a href="/Admin/Product" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Product" ? "active" : "")">
+                <i class="fa-solid fa-shirt"></i> Sản phẩm
             </a>
 
-            <a href="/Admin/Order" class="py-3 px-4 text-decoration-none text-light hover-bg">
-                <i class="fa-solid fa-file-invoice-dollar me-2"></i> Đơn Hàng
+            <a href="/Admin/Order" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Order" ? "active" : "")">
+                <i class="fa-solid fa-file-invoice-dollar"></i> Đơn hàng
             </a>
 
-            <a href="/Admin/User" class="py-3 px-4 text-decoration-none text-light hover-bg text-muted">
-                <i class="fa-solid fa-users me-2"></i> Khách Hàng
+            <a href="/Admin/News" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "News" ? "active" : "")">
+                <i class="fa-solid fa-newspaper"></i> Tin tức
             </a>
-        </div>
+
+            <a href="/Admin/Customer" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Customer" ? "active" : "")">
+                <i class="fa-solid fa-users"></i> Khách hàng
+            </a>
+
+            <a href="/Admin/Contact" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Contact" ? "active" : "")">
+                <i class="fa-solid fa-envelope"></i> Liên hệ & góp ý
+            </a>
+        </nav>
 
         <hr class="border-secondary mx-3">
 
-        <a href="/" target="_blank" class="py-3 px-4 text-decoration-none text-warning">
-            <i class="fa-solid fa-arrow-left me-2"></i> Về trang bán hàng
+        <a href="/" target="_blank" class="sidebar-back">
+            <i class="fa-solid fa-arrow-left"></i> Về trang bán hàng
         </a>
-    </div>
+    </aside>
 
+    <!-- ===== MAIN CONTENT ===== -->
     <div class="main-content">
-        <nav class="navbar navbar-light bg-light mb-4 shadow-sm px-3 rounded">
-            <span class="navbar-brand mb-0 h1">Xin chào, Quản trị viên</span>
-            <button class="btn btn-outline-danger btn-sm">Đăng xuất</button>
-        </nav>
 
-        @RenderBody()
+        <!-- TOP BAR -->
+        <header class="admin-navbar d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold">
+                Xin chào, <span class="text-danger">Quản trị viên</span>
+            </span>
+
+            <a href="/Account/Logout" class="btn btn-outline-danger btn-sm">
+                <i class="fa-solid fa-right-from-bracket me-1"></i> Đăng xuất
+            </a>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <main>
+            @RenderBody()
+        </main>
     </div>
 
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+
 </body>
 </html>

@@ -4,73 +4,134 @@
     ViewData["Title"] = "Giỏ Hàng";
 }
 
-<div class="container py-5">
-    <h2 class="text-uppercase fw-bold mb-4">Giỏ Hàng Của Bạn</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/cart.css" asp-append-version="true" />
+}
+@using MenFashionProject.Models
+@using MenFashionProject.Helpers
+
+@{
+    var voucher = Context.Session.GetObjectFromJson<Voucher>("MY_VOUCHER");
+
+    decimal subTotal = Model.Sum(x => x.Total);
+    decimal discount = 0;
+
+    if (voucher != null)
+    {
+        if (voucher.DiscountType == 1)
+        {
+            discount = voucher.DiscountValue;
+        }
+        else if (voucher.DiscountType == 2)
+        {
+            discount = subTotal * voucher.DiscountValue / 100;
+        }
+    }
+
+    decimal finalTotal = subTotal - discount;
+    if (finalTotal < 0) finalTotal = 0;
+}
+
+<div class="container cart-page py-5">
+
+    <h2 class="cart-title">Giỏ hàng của bạn</h2>
 
     @if (Model.Count > 0)
     {
         <div class="row">
-            <div class="col-md-8">
-                <table class="table align-middle">
-                    <thead class="table-light">
-                        <tr>
-                            <th>Sản phẩm</th>
-                            <th>Giá</th>
-                            <th>Số lượng</th>
-                            <th>Thành tiền</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
+            <!-- ===== DANH SÁCH SẢN PHẨM ===== -->
+            <div class="col-lg-8">
+                <div class="cart-box">
+                    <table class="table cart-table align-middle">
+                        <thead>
                             <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <img src="~/images/@item.Image" style="width: 50px; height: 50px; object-fit: cover;" class="rounded me-3">
-                                        <span class="fw-bold">@item.ProductName</span>
-                                    </div>
-                                </td>
-                                <td>@item.Price.ToString("#,##0") đ</td>
-                                <td>
-                                    <input type="number" value="@item.Quantity" class="form-control text-center" style="width: 60px;" readonly>
-                                </td>
-                                <td class="fw-bold text-danger">@item.Total.ToString("#,##0") đ</td>
-                                <a href="/Cart/Remove?id=@item.ProductId&size=@item.Size&color=@item.Color"
-                                   class="text-danger"
-                                   onclick="return confirm('Xóa sản phẩm này?')">
-                                    <i class="fa-solid fa-trash"></i>
-                                </a>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th></th>
                             </tr>
-                        }
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="cart-product">
+                                            <img src="~/images/@item.Image" />
+                                            <div>
+                                                <div class="name">@item.ProductName</div>
+                                                <small>Size: @item.Size | Màu: @item.Color</small>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="price">
+                                        @item.Price.ToString("#,##0") đ
+                                    </td>
+                                    <td>
+                                        <div class="qty-wrapper">
+                                            <a class="qty-btn"
+                                               href="/Cart/UpdateQuantity?id=@item.ProductId&size=@item.Size&color=@item.Color&change=-1">−</a>
+
+                                            <input type="text" value="@item.Quantity" readonly />
+
+                                            <a class="qty-btn"
+                                               href="/Cart/UpdateQuantity?id=@item.ProductId&size=@item.Size&color=@item.Color&change=1">+</a>
+                                        </div>
+                                    </td>
+
+
+                                    <td class="total">
+                                        @item.Total.ToString("#,##0") đ
+                                    </td>
+
+                                    <td class="text-center">
+                                        <a href="/Cart/Remove?id=@item.ProductId&size=@item.Size&color=@item.Color"
+                                           onclick="return confirm('Xóa sản phẩm này?')"
+                                           class="remove-btn">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card bg-light border-0 p-3">
-                    <h5 class="fw-bold text-uppercase">Cộng Giỏ Hàng</h5>
-                    <hr>
-                    <div class="d-flex justify-content-between mb-3">
-                        <span>Tạm tính:</span>
-                        <span class="fw-bold">@Model.Sum(x => x.Total).ToString("#,##0") đ</span>
+            <!-- ===== TỔNG TIỀN ===== -->
+            <div class="col-lg-4">
+                <div class="cart-summary">
+                    <h5>Cộng giỏ hàng</h5>
+                    <div class="summary-row">
+                        <span>Tạm tính</span>
+                        <span>@Model.Sum(x => x.Total).ToString("#,##0") đ</span>
                     </div>
-                    <div class="d-flex justify-content-between mb-4">
-                        <span>Tổng tiền:</span>
-                        <span class="fw-bold text-danger fs-4">@Model.Sum(x => x.Total).ToString("#,##0") đ</span>
+
+                    <div class="summary-row total">
+                        <span>Tổng tiền</span>
+                        <span>@Model.Sum(x => x.Total).ToString("#,##0") đ</span>
                     </div>
-                    <a href="/Checkout/Index" class="btn btn-dark w-100 fw-bold py-2">TIẾN HÀNH THANH TOÁN</a>
-                    <a href="/" class="btn btn-outline-secondary w-100 mt-2">Tiếp tục mua sắm</a>
+
+                    <a href="/Checkout/Index" class="btn btn-dark w-100 mb-2">
+                        Tiến hành thanh toán
+                    </a>
+
+                    <a href="/" class="btn btn-outline-secondary w-100">
+                        Tiếp tục mua sắm
+                    </a>
                 </div>
             </div>
         </div>
     }
     else
     {
-        <div class="text-center py-5">
-            <i class="fa-solid fa-cart-shopping fa-3x text-muted mb-3"></i>
-            <p>Giỏ hàng của bạn đang trống.</p>
+        <div class="cart-empty">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Giỏ hàng của bạn đang trống</p>
             <a href="/" class="btn btn-dark">Mua sắm ngay</a>
         </div>
     }
+
 </div>
